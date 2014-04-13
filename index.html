@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>The 1140px Grid &middot; Fluid down to mobile</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!--Delete embedded styles, just for example.-->
+	<style type="text/css">
+	
+	body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#6A5ACD;
+	}
+	
+	.container p {
+	color: black;
+	text-align: center;
+	}
+	
+	div {
+	background:#778899;
+	}
+	
+	.twelvecol last {
+	height:150px; 
+	}
+	
+	a:hover 
+	{color:#FF00FF; text-decoration:none; text-transform:uppercase;}
+	
+	nav, footer, figcaption
+	{
+	text-align:center;
+	}
+	
+	img
+	{
+	border-radius:5%;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<div class="container" >
+	<div class="row"> 
+		<div class="twelvecol last">
+		<header>
+			<nav>
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact Form</a> 
+			</nav>
+		</header>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<section>
+		<div class="fourcol">
+			 <figure>
+ <img src="c.jpg" alt="cocktail"/>
+  <figcaption>Fruity Coctails</figcaption>
+			</figure> 
+		</div>
+		<div class="fourcol">
+			 <figure>
+ <img src="c2.jpg" alt="cocktail"/>
+  <figcaption>Fruity Coctails</figcaption>
+</figure> 
+		</div>
+		<div class="fourcol last">
+			 <figure>
+ <img src="c3.jpg" alt="cocktail"/>
+  <figcaption>Fruity Coctails</figcaption>
+</figure> 	
+		</div>
+		</section>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<section>
+		<div class="fourcol">
+			<figure>
+ <img src="c4.jpg" alt="cocktail"/>
+  <figcaption>Fruity Coctails</figcaption>
+</figure>
+		</div>
+		<div class="fourcol">
+			 <figure>
+ <img src="c5.jpg" alt="cocktail"/>
+   <figcaption>Fruity Coctails</figcaption>
+</figure> 
+		</div>
+		<div class="fourcol last">
+			<figure>
+ <img src="c6.jpg" alt="cocktail"/>
+  <figcaption>Fruity Coctails</figcaption>
+</figure>
+		</div>
+		</section>
+	</div>
+</div>
+
+<div class="container" >
+	<div class="row"> 
+			<div class="twelvecol last">
+			<footer>
+			 &copy RANDOM PATTERN 2014 
+			</footer>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
