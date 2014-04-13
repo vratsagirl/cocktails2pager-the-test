@@ -1,0 +1,212 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>The 1140px Grid &middot; Fluid down to mobile</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="responsiveslides.js"></script>
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!--Delete embedded styles, just for example.-->
+	<style type="text/css">
+	
+ 
+	
+	body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height:960px;
+	background: #778899;
+	}
+	
+.rslides
+ {
+  position:relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ float:right;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+	
+	
+	.container p
+	{
+	color: black;
+	background: #778899;
+	text-align: center;
+	margin: 20px 0 0 0;
+	border-radius:10%;
+	}
+	div
+	{
+	background-color:#778899;
+	}
+	
+	header, footer
+	{
+	background-color:#6A5ACD;
+	}
+	
+	a:hover 
+	{color:#FF00FF; text-decoration:none; text-transform:uppercase;}
+	
+form
+{
+background-color:#ebedee;
+width:248px;
+height:434px;
+font-family: Thoma, Geneva, sans-serif;   
+font-size:14px;
+line-height:24px;
+font-weight:bold;
+color:#778899;
+text-decoration: none;
+padding:20px;
+border:1px solid #778899; 
+text-align:left; 
+margin: 0 auto;
+}
+input
+{
+width:250px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+} 
+
+button
+{
+width:150px;
+display:block;
+border: 1px solid #999;
+height: 30px;
+color:white;
+background:#778899;
+border-radius:5%;
+}
+  
+#slideshow
+{
+  float:right;
+}
+ </style>
+
+</head>
+
+
+<body>
+<!--header-->
+<div class="container">
+	<div class="row">
+		 
+		<div class="twelvecol last">
+		<header>
+			<p><a href="index.html">Home</a>
+			<a href="contact.html">Contact Form</a></p>
+		</header>
+		</div>
+	</div>
+</div>
+
+<!--slideshow-->
+<div class="container" >
+	<div class="row">
+		<div class="threecol">
+						<form>
+									<h1>CONTACT FORM</h1>
+								<label>  
+									<span>Name</span>
+									<input type="text" name="name" />
+								</label>
+								<label>
+									<span>Surname</span>
+									<input type="text" name="surname" />
+								</label>
+								<label>
+									<span>Email Address</span><input type="text" name="email"/>
+								</label>  
+								<label id="com">
+									<span>Comments</span><input type="text" name="comments"/>
+								</label>
+								<label>
+									<button type="button"><a href="index.html">Submit Form</button></a>
+									 
+								</label>
+						</form>	
+		
+		</div>
+		<div class="ninecol last" >
+			<ul class="rslides">
+				<li><img src="co1.jpg" alt="cocktail"></li>
+				<li><img src="co2.jpg" alt="cocktail"></li>
+				<li><img src="co3.jpg" alt="cocktail"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--video-->
+<div class="container">
+	<div class="row"> 
+		<div class="twelvecol last" id="video">	 
+			<iframe width="1280" height="720" src="http://www.youtube.com/embed/1t0PX60HDIs" frameborder="0" allowfullscreen></iframe>		
+	</div>
+</div> 
+<!--footer-->
+<div class="container">
+	<div class="row"> 
+		<div class="twelvecol last">
+			<footer>
+			<p>&copy RANDOM PATTERN 2014</p>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<script>
+  $(function() {
+	$("body").fadeIn();
+    $(".rslides").responsiveSlides();
+  });
+</script>  
+
+</body>
+
+</html>
